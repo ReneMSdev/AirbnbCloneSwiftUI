@@ -22,6 +22,10 @@
 		CFA1BF5C2BA41D69003E0E47 /* WishlistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA1BF5B2BA41D69003E0E47 /* WishlistView.swift */; };
 		CFA1BF602BA41E72003E0E47 /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA1BF5F2BA41E72003E0E47 /* LoginButton.swift */; };
 		CFA1BF622BA41FB2003E0E47 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA1BF612BA41FB2003E0E47 /* MainTabView.swift */; };
+		CFA1BF662BA43B52003E0E47 /* Listing.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA1BF652BA43B52003E0E47 /* Listing.swift */; };
+		CFA1BF682BA44117003E0E47 /* DeveloperPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA1BF672BA44117003E0E47 /* DeveloperPreview.swift */; };
+		CFA1BF6D2BA44864003E0E47 /* ExploreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA1BF6C2BA44864003E0E47 /* ExploreViewModel.swift */; };
+		CFA1BF6F2BA448BE003E0E47 /* ExploreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA1BF6E2BA448BE003E0E47 /* ExploreService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +45,10 @@
 		CFA1BF5B2BA41D69003E0E47 /* WishlistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistView.swift; sourceTree = "<group>"; };
 		CFA1BF5F2BA41E72003E0E47 /* LoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButton.swift; sourceTree = "<group>"; };
 		CFA1BF612BA41FB2003E0E47 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		CFA1BF652BA43B52003E0E47 /* Listing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Listing.swift; sourceTree = "<group>"; };
+		CFA1BF672BA44117003E0E47 /* DeveloperPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperPreview.swift; sourceTree = "<group>"; };
+		CFA1BF6C2BA44864003E0E47 /* ExploreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewModel.swift; sourceTree = "<group>"; };
+		CFA1BF6E2BA448BE003E0E47 /* ExploreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +104,7 @@
 		CFA1BF3B2BA3CCA1003E0E47 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				CFA1BF672BA44117003E0E47 /* DeveloperPreview.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -140,9 +149,9 @@
 		CFA1BF412BA3CD7B003E0E47 /* Explore */ = {
 			isa = PBXGroup;
 			children = (
-				CFA1BF4A2BA3D426003E0E47 /* ExploreView.swift */,
-				CFA1BF532BA4035D003E0E47 /* DestinationSearchView.swift */,
-				CFA1BF482BA3D28E003E0E47 /* SearchAndFilterBar.swift */,
+				CFA1BF6B2BA4482D003E0E47 /* Service */,
+				CFA1BF6A2BA4482A003E0E47 /* View */,
+				CFA1BF692BA44825003E0E47 /* ViewModel */,
 			);
 			path = Explore;
 			sourceTree = "<group>";
@@ -150,8 +159,8 @@
 		CFA1BF422BA3CD82003E0E47 /* Listings */ = {
 			isa = PBXGroup;
 			children = (
-				CFA1BF4C2BA3D541003E0E47 /* ListingItemView.swift */,
-				CFA1BF4E2BA3F1E5003E0E47 /* ListingDetailView.swift */,
+				CFA1BF632BA43B22003E0E47 /* Model */,
+				CFA1BF642BA43B2A003E0E47 /* View */,
 			);
 			path = Listings;
 			sourceTree = "<group>";
@@ -202,6 +211,49 @@
 				CFA1BF5F2BA41E72003E0E47 /* LoginButton.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		CFA1BF632BA43B22003E0E47 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CFA1BF652BA43B52003E0E47 /* Listing.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CFA1BF642BA43B2A003E0E47 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CFA1BF4C2BA3D541003E0E47 /* ListingItemView.swift */,
+				CFA1BF4E2BA3F1E5003E0E47 /* ListingDetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CFA1BF692BA44825003E0E47 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CFA1BF6C2BA44864003E0E47 /* ExploreViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CFA1BF6A2BA4482A003E0E47 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CFA1BF4A2BA3D426003E0E47 /* ExploreView.swift */,
+				CFA1BF532BA4035D003E0E47 /* DestinationSearchView.swift */,
+				CFA1BF482BA3D28E003E0E47 /* SearchAndFilterBar.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CFA1BF6B2BA4482D003E0E47 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				CFA1BF6E2BA448BE003E0E47 /* ExploreService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,13 +329,17 @@
 				CFA1BF522BA3F2B5003E0E47 /* ListingImageCarouselView.swift in Sources */,
 				CFA1BF602BA41E72003E0E47 /* LoginButton.swift in Sources */,
 				CFA1BF582BA419F4003E0E47 /* ProfileView.swift in Sources */,
+				CFA1BF6F2BA448BE003E0E47 /* ExploreService.swift in Sources */,
 				CFA1BF5A2BA41BB9003E0E47 /* ProfileOptionRowView.swift in Sources */,
 				CFA1BF542BA4035D003E0E47 /* DestinationSearchView.swift in Sources */,
+				CFA1BF682BA44117003E0E47 /* DeveloperPreview.swift in Sources */,
 				CFA1BF302BA3CC8B003E0E47 /* ContentView.swift in Sources */,
 				CFA1BF4D2BA3D541003E0E47 /* ListingItemView.swift in Sources */,
 				CFA1BF622BA41FB2003E0E47 /* MainTabView.swift in Sources */,
+				CFA1BF662BA43B52003E0E47 /* Listing.swift in Sources */,
 				CFA1BF492BA3D28E003E0E47 /* SearchAndFilterBar.swift in Sources */,
 				CFA1BF5C2BA41D69003E0E47 /* WishlistView.swift in Sources */,
+				CFA1BF6D2BA44864003E0E47 /* ExploreViewModel.swift in Sources */,
 				CFA1BF4B2BA3D426003E0E47 /* ExploreView.swift in Sources */,
 				CFA1BF4F2BA3F1E5003E0E47 /* ListingDetailView.swift in Sources */,
 				CFA1BF2E2BA3CC8B003E0E47 /* AirbnbSwiftUIApp.swift in Sources */,
