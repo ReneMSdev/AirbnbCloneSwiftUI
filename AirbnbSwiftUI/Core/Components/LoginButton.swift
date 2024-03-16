@@ -10,15 +10,10 @@ import SwiftUI
 struct LoginButton: View {
     var body: some View {
         Button {
-            print("Log in")
+            print("Login")
         } label: {
-            Text("Log in")
-                .foregroundStyle(.white)
-                .fontWeight(.semibold)
-                .font(.subheadline)
-                .frame(width: 360, height: 48)
-                .background(.pink)
-                .clipShape(RoundedRectangle(cornerRadius: 8))
+            Text("Login")
+                .modifier(PrimaryButtonModifier())
         }
     }
 }

@@ -91,7 +91,7 @@ class DeveloperPreview {
         longitude: -118.0426, 
         imageURLs: ["listing-5", "listing-6", "listing-7", "listing-8"],
         address: "124 Ocean Dr",
-        city: "Malibu",
+        city: "Los Angeles",
         state: "California",
         title: "Beautiful Malibu home in near the beach",
         rating: 4.85,

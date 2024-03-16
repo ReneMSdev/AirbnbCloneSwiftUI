@@ -10,36 +10,59 @@ import SwiftUI
 struct ExploreView: View {
     @State private var showDestinationSearchView = false
     @StateObject var viewModel = ExploreViewModel(service: ExploreService())
+    @State private var showMapView = false
     
     var body: some View {
         NavigationStack {
             if showDestinationSearchView {
-                DestinationSearchView(show: $showDestinationSearchView)
+                DestinationSearchView(show: $showDestinationSearchView, viewModel: viewModel)
             } else {
-                ScrollView {
-                    SearchAndFilterBar()
-                        .onTapGesture {
-                            withAnimation(.snappy) {
-                                showDestinationSearchView.toggle()
+                ZStack(alignment: .bottom) {
+                    ScrollView {
+                        SearchAndFilterBar(location: $viewModel.searchLocation)
+                            .onTapGesture {
+                                withAnimation(.snappy) {
+                                    showDestinationSearchView.toggle()
+                                }
+                            }
+                        
+                        // LazyVS loads items only on screen
+                        LazyVStack(spacing: 32) {
+                            ForEach(viewModel.listings) { listing in
+                                NavigationLink(value: listing) {
+                                    ListingItemView(listing: listing)
+                                        .frame(height: 400)
+                                        .clipShape(RoundedRectangle(cornerRadius: 10))
+                                }
                             }
                         }
-                    
-                    // LazyVS loads items only on screen
-                    LazyVStack(spacing: 32) {
-                        ForEach(viewModel.listings) { listing in
-                            NavigationLink(value: listing) {
-                                ListingItemView(listing: listing)
-                                    .frame(height: 400)
-                                    .clipShape(RoundedRectangle(cornerRadius: 10))
-                            }
-                        }
+                        .padding()
                     }
-                    .padding()
+                    .navigationDestination(for: Listing.self) { listing in
+                        ListingDetailView(listing: listing)
+                            .navigationBarBackButtonHidden()
+                    }
+                    
+                    // Map button
+                    Button {
+                        showMapView.toggle()
+                    } label: {
+                        HStack {
+                            Text("Map")
+                            
+                            Image(systemName: "paperplane")
+                        }
+                        .foregroundStyle(.white)
+                        .padding(.vertical, 12)
+                        .padding(.horizontal)
+                        .background(Color.black)
+                        .clipShape(Capsule())
+                        .padding()
+                    }
                 }
-                .navigationDestination(for: Listing.self) { listing in
-                    ListingDetailView(listing: listing)
-                        .navigationBarBackButtonHidden()
-                }
+                .sheet(isPresented: $showMapView, content: {
+                    ListingMapView(listings: viewModel.listings)
+                })
             }
         }
     }

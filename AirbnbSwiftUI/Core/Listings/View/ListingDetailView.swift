@@ -9,28 +9,27 @@ import SwiftUI
 import MapKit
 
 struct ListingDetailView: View {
-    // environment trigger for back button
-    @Environment(\.dismiss) var dismiss
+    
     let listing: Listing
+    @State private var cameraPosition: MapCameraPosition
+    
+    init(listing: Listing) {
+        self.listing = listing
+        
+        let region = MKCoordinateRegion(
+            center: listing.city == "Los Angeles" ? .losAngeles : .miami,
+            span: MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1))
+        self._cameraPosition = State(initialValue: .region(region))
+    }
     
     var body: some View {
         ScrollView {
             ZStack(alignment: .topLeading) {
+                
                 ListingImageCarouselView(listing: listing)
                     .frame(height: 320)
                 
-                Button {
-                    dismiss()
-                } label: {
-                    Image(systemName: "chevron.left")
-                        .foregroundStyle(.black)
-                        .background{
-                            Circle()
-                                .fill(.white)
-                                .frame(width: 32, height: 32)
-                        }
-                        .padding(32)
-                }
+                BackButton()
             }
             
             VStack(alignment: .leading, spacing: 8) {
@@ -167,7 +166,7 @@ struct ListingDetailView: View {
                 Text("Where you'll be")
                     .font(.headline)
                 
-                Map()
+                Map(position: $cameraPosition)
                     .frame(height: 200)
                     .clipShape(RoundedRectangle(cornerRadius: 12))
             }

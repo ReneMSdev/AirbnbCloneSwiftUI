@@ -26,6 +26,17 @@
 		CFA1BF682BA44117003E0E47 /* DeveloperPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA1BF672BA44117003E0E47 /* DeveloperPreview.swift */; };
 		CFA1BF6D2BA44864003E0E47 /* ExploreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA1BF6C2BA44864003E0E47 /* ExploreViewModel.swift */; };
 		CFA1BF6F2BA448BE003E0E47 /* ExploreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA1BF6E2BA448BE003E0E47 /* ExploreService.swift */; };
+		CFA1BF712BA461BD003E0E47 /* Regions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA1BF702BA461BD003E0E47 /* Regions.swift */; };
+		CFF628822BA5A5E0008F16E8 /* ListingMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF628812BA5A5E0008F16E8 /* ListingMapView.swift */; };
+		CFF628842BA5AEAD008F16E8 /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF628832BA5AEAD008F16E8 /* BackButton.swift */; };
+		CFF628862BA5BF81008F16E8 /* ListingMapPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF628852BA5BF81008F16E8 /* ListingMapPreviewView.swift */; };
+		CFF628902BA5F8AF008F16E8 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF6288F2BA5F8AF008F16E8 /* LoginView.swift */; };
+		CFF628922BA5F8C2008F16E8 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF628912BA5F8C2008F16E8 /* RegistrationView.swift */; };
+		CFF628942BA5F8D5008F16E8 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF628932BA5F8D5008F16E8 /* LoginViewModel.swift */; };
+		CFF628962BA5F8E4008F16E8 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF628952BA5F8E4008F16E8 /* RegistrationViewModel.swift */; };
+		CFF628992BA5FC86008F16E8 /* PrimaryTextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF628982BA5FC86008F16E8 /* PrimaryTextFieldModifier.swift */; };
+		CFF6289B2BA5FDD8008F16E8 /* PrimaryButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF6289A2BA5FDD8008F16E8 /* PrimaryButtonModifier.swift */; };
+		CFF6289D2BA60228008F16E8 /* AuthenticationFormProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF6289C2BA60228008F16E8 /* AuthenticationFormProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +60,17 @@
 		CFA1BF672BA44117003E0E47 /* DeveloperPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperPreview.swift; sourceTree = "<group>"; };
 		CFA1BF6C2BA44864003E0E47 /* ExploreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewModel.swift; sourceTree = "<group>"; };
 		CFA1BF6E2BA448BE003E0E47 /* ExploreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreService.swift; sourceTree = "<group>"; };
+		CFA1BF702BA461BD003E0E47 /* Regions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Regions.swift; sourceTree = "<group>"; };
+		CFF628812BA5A5E0008F16E8 /* ListingMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingMapView.swift; sourceTree = "<group>"; };
+		CFF628832BA5AEAD008F16E8 /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
+		CFF628852BA5BF81008F16E8 /* ListingMapPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingMapPreviewView.swift; sourceTree = "<group>"; };
+		CFF6288F2BA5F8AF008F16E8 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		CFF628912BA5F8C2008F16E8 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		CFF628932BA5F8D5008F16E8 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		CFF628952BA5F8E4008F16E8 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		CFF628982BA5FC86008F16E8 /* PrimaryTextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryTextFieldModifier.swift; sourceTree = "<group>"; };
+		CFF6289A2BA5FDD8008F16E8 /* PrimaryButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButtonModifier.swift; sourceTree = "<group>"; };
+		CFF6289C2BA60228008F16E8 /* AuthenticationFormProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationFormProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				CFA1BF672BA44117003E0E47 /* DeveloperPreview.swift */,
+				CFA1BF702BA461BD003E0E47 /* Regions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -112,6 +135,7 @@
 		CFA1BF3D2BA3CCB1003E0E47 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				CFF628882BA5F846008F16E8 /* Authentication */,
 				CFA1BF502BA3F29C003E0E47 /* Components */,
 				CFA1BF412BA3CD7B003E0E47 /* Explore */,
 				CFA1BF422BA3CD82003E0E47 /* Listings */,
@@ -142,6 +166,7 @@
 		CFA1BF402BA3CD05003E0E47 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				CFF628972BA5FC66008F16E8 /* Modifiers */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -209,6 +234,7 @@
 			children = (
 				CFA1BF512BA3F2B5003E0E47 /* ListingImageCarouselView.swift */,
 				CFA1BF5F2BA41E72003E0E47 /* LoginButton.swift */,
+				CFF628832BA5AEAD008F16E8 /* BackButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -226,6 +252,8 @@
 			children = (
 				CFA1BF4C2BA3D541003E0E47 /* ListingItemView.swift */,
 				CFA1BF4E2BA3F1E5003E0E47 /* ListingDetailView.swift */,
+				CFF628812BA5A5E0008F16E8 /* ListingMapView.swift */,
+				CFF628852BA5BF81008F16E8 /* ListingMapPreviewView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -254,6 +282,75 @@
 				CFA1BF6E2BA448BE003E0E47 /* ExploreService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		CFF628882BA5F846008F16E8 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				CFF6288E2BA5F85C008F16E8 /* Manager */,
+				CFF6288D2BA5F85A008F16E8 /* Model */,
+				CFF6288C2BA5F858008F16E8 /* Protocols */,
+				CFF628892BA5F851008F16E8 /* Service */,
+				CFF6288B2BA5F856008F16E8 /* Views */,
+				CFF6288A2BA5F854008F16E8 /* ViewModels */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		CFF628892BA5F851008F16E8 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		CFF6288A2BA5F854008F16E8 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CFF628932BA5F8D5008F16E8 /* LoginViewModel.swift */,
+				CFF628952BA5F8E4008F16E8 /* RegistrationViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CFF6288B2BA5F856008F16E8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CFF6288F2BA5F8AF008F16E8 /* LoginView.swift */,
+				CFF628912BA5F8C2008F16E8 /* RegistrationView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CFF6288C2BA5F858008F16E8 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				CFF6289C2BA60228008F16E8 /* AuthenticationFormProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		CFF6288D2BA5F85A008F16E8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CFF6288E2BA5F85C008F16E8 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		CFF628972BA5FC66008F16E8 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				CFF628982BA5FC86008F16E8 /* PrimaryTextFieldModifier.swift */,
+				CFF6289A2BA5FDD8008F16E8 /* PrimaryButtonModifier.swift */,
+			);
+			path = Modifiers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -328,20 +425,31 @@
 			files = (
 				CFA1BF522BA3F2B5003E0E47 /* ListingImageCarouselView.swift in Sources */,
 				CFA1BF602BA41E72003E0E47 /* LoginButton.swift in Sources */,
+				CFF628922BA5F8C2008F16E8 /* RegistrationView.swift in Sources */,
+				CFF628992BA5FC86008F16E8 /* PrimaryTextFieldModifier.swift in Sources */,
 				CFA1BF582BA419F4003E0E47 /* ProfileView.swift in Sources */,
 				CFA1BF6F2BA448BE003E0E47 /* ExploreService.swift in Sources */,
+				CFF628842BA5AEAD008F16E8 /* BackButton.swift in Sources */,
 				CFA1BF5A2BA41BB9003E0E47 /* ProfileOptionRowView.swift in Sources */,
 				CFA1BF542BA4035D003E0E47 /* DestinationSearchView.swift in Sources */,
 				CFA1BF682BA44117003E0E47 /* DeveloperPreview.swift in Sources */,
+				CFF6289D2BA60228008F16E8 /* AuthenticationFormProtocol.swift in Sources */,
+				CFF628902BA5F8AF008F16E8 /* LoginView.swift in Sources */,
 				CFA1BF302BA3CC8B003E0E47 /* ContentView.swift in Sources */,
 				CFA1BF4D2BA3D541003E0E47 /* ListingItemView.swift in Sources */,
 				CFA1BF622BA41FB2003E0E47 /* MainTabView.swift in Sources */,
 				CFA1BF662BA43B52003E0E47 /* Listing.swift in Sources */,
+				CFF628822BA5A5E0008F16E8 /* ListingMapView.swift in Sources */,
 				CFA1BF492BA3D28E003E0E47 /* SearchAndFilterBar.swift in Sources */,
 				CFA1BF5C2BA41D69003E0E47 /* WishlistView.swift in Sources */,
+				CFA1BF712BA461BD003E0E47 /* Regions.swift in Sources */,
 				CFA1BF6D2BA44864003E0E47 /* ExploreViewModel.swift in Sources */,
 				CFA1BF4B2BA3D426003E0E47 /* ExploreView.swift in Sources */,
+				CFF628962BA5F8E4008F16E8 /* RegistrationViewModel.swift in Sources */,
+				CFF628942BA5F8D5008F16E8 /* LoginViewModel.swift in Sources */,
 				CFA1BF4F2BA3F1E5003E0E47 /* ListingDetailView.swift in Sources */,
+				CFF6289B2BA5FDD8008F16E8 /* PrimaryButtonModifier.swift in Sources */,
+				CFF628862BA5BF81008F16E8 /* ListingMapPreviewView.swift in Sources */,
 				CFA1BF2E2BA3CC8B003E0E47 /* AirbnbSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
