@@ -10,6 +10,7 @@ import SwiftUI
 struct LoginView: View {
     @State private var email = ""
     @State private var password = ""
+    @StateObject var viewModel = LoginViewModel(service: MockAuthService())
     
     var body: some View {
         NavigationStack {
@@ -41,8 +42,20 @@ struct LoginView: View {
                         .frame(maxWidth: .infinity, alignment: .trailing)
                 }
                 
-                LoginButton()
+                // login button
+                Button {
+                    Task {
+                        await viewModel.login(
+                            withEmail: email,
+                            password: password)
+                    }
+                } label: {
+                    Text("Login")
+                        .modifier(PrimaryButtonModifier())
+                }
                     .padding(.vertical)
+                    .disabled(!formIsValid)
+                    .opacity(formIsValid ? 1.0 : 0.7)
                 
                 Spacer()
                 
@@ -66,13 +79,16 @@ struct LoginView: View {
     }
 }
 
+//MARK: - AuthenticationFormProtocol
+
 extension LoginView: AuthenticationFormProtocol {
     var formIsValid: Bool {
-        // logic goes here
-        return true
+        return !email.isEmpty &&
+        email.contains("@") &&
+        !password.isEmpty &&
+        password.count > 5
+        // can more conditions for password
     }
-    
-    
 }
 
 #Preview {

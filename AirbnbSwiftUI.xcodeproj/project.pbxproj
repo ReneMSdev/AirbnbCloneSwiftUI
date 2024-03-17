@@ -20,7 +20,6 @@
 		CFA1BF582BA419F4003E0E47 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA1BF572BA419F4003E0E47 /* ProfileView.swift */; };
 		CFA1BF5A2BA41BB9003E0E47 /* ProfileOptionRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA1BF592BA41BB9003E0E47 /* ProfileOptionRowView.swift */; };
 		CFA1BF5C2BA41D69003E0E47 /* WishlistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA1BF5B2BA41D69003E0E47 /* WishlistView.swift */; };
-		CFA1BF602BA41E72003E0E47 /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA1BF5F2BA41E72003E0E47 /* LoginButton.swift */; };
 		CFA1BF622BA41FB2003E0E47 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA1BF612BA41FB2003E0E47 /* MainTabView.swift */; };
 		CFA1BF662BA43B52003E0E47 /* Listing.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA1BF652BA43B52003E0E47 /* Listing.swift */; };
 		CFA1BF682BA44117003E0E47 /* DeveloperPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA1BF672BA44117003E0E47 /* DeveloperPreview.swift */; };
@@ -37,6 +36,7 @@
 		CFF628992BA5FC86008F16E8 /* PrimaryTextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF628982BA5FC86008F16E8 /* PrimaryTextFieldModifier.swift */; };
 		CFF6289B2BA5FDD8008F16E8 /* PrimaryButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF6289A2BA5FDD8008F16E8 /* PrimaryButtonModifier.swift */; };
 		CFF6289D2BA60228008F16E8 /* AuthenticationFormProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF6289C2BA60228008F16E8 /* AuthenticationFormProtocol.swift */; };
+		CFF6289F2BA674DA008F16E8 /* MockAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF6289E2BA674DA008F16E8 /* MockAuthService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,7 +54,6 @@
 		CFA1BF572BA419F4003E0E47 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		CFA1BF592BA41BB9003E0E47 /* ProfileOptionRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileOptionRowView.swift; sourceTree = "<group>"; };
 		CFA1BF5B2BA41D69003E0E47 /* WishlistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistView.swift; sourceTree = "<group>"; };
-		CFA1BF5F2BA41E72003E0E47 /* LoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButton.swift; sourceTree = "<group>"; };
 		CFA1BF612BA41FB2003E0E47 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		CFA1BF652BA43B52003E0E47 /* Listing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Listing.swift; sourceTree = "<group>"; };
 		CFA1BF672BA44117003E0E47 /* DeveloperPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperPreview.swift; sourceTree = "<group>"; };
@@ -71,6 +70,7 @@
 		CFF628982BA5FC86008F16E8 /* PrimaryTextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryTextFieldModifier.swift; sourceTree = "<group>"; };
 		CFF6289A2BA5FDD8008F16E8 /* PrimaryButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButtonModifier.swift; sourceTree = "<group>"; };
 		CFF6289C2BA60228008F16E8 /* AuthenticationFormProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationFormProtocol.swift; sourceTree = "<group>"; };
+		CFF6289E2BA674DA008F16E8 /* MockAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAuthService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,7 +233,6 @@
 			isa = PBXGroup;
 			children = (
 				CFA1BF512BA3F2B5003E0E47 /* ListingImageCarouselView.swift */,
-				CFA1BF5F2BA41E72003E0E47 /* LoginButton.swift */,
 				CFF628832BA5AEAD008F16E8 /* BackButton.swift */,
 			);
 			path = Components;
@@ -300,6 +299,7 @@
 		CFF628892BA5F851008F16E8 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				CFF6289E2BA674DA008F16E8 /* MockAuthService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -424,7 +424,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFA1BF522BA3F2B5003E0E47 /* ListingImageCarouselView.swift in Sources */,
-				CFA1BF602BA41E72003E0E47 /* LoginButton.swift in Sources */,
 				CFF628922BA5F8C2008F16E8 /* RegistrationView.swift in Sources */,
 				CFF628992BA5FC86008F16E8 /* PrimaryTextFieldModifier.swift in Sources */,
 				CFA1BF582BA419F4003E0E47 /* ProfileView.swift in Sources */,
@@ -445,6 +444,7 @@
 				CFA1BF712BA461BD003E0E47 /* Regions.swift in Sources */,
 				CFA1BF6D2BA44864003E0E47 /* ExploreViewModel.swift in Sources */,
 				CFA1BF4B2BA3D426003E0E47 /* ExploreView.swift in Sources */,
+				CFF6289F2BA674DA008F16E8 /* MockAuthService.swift in Sources */,
 				CFF628962BA5F8E4008F16E8 /* RegistrationViewModel.swift in Sources */,
 				CFF628942BA5F8D5008F16E8 /* LoginViewModel.swift in Sources */,
 				CFA1BF4F2BA3F1E5003E0E47 /* ListingDetailView.swift in Sources */,

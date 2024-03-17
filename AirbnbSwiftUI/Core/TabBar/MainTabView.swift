@@ -14,10 +14,10 @@ struct MainTabView: View {
                 .tabItem { Label("Explore", systemImage: "magnifyingglass") }
             
             WishlistView()
-                .tabItem { Label("Explore", systemImage: "heart") }
+                .tabItem { Label("Wishlist", systemImage: "heart") }
             
             ProfileView()
-                .tabItem { Label("Explore", systemImage: "person.circle") }
+                .tabItem { Label("Profile", systemImage: "person.circle") }
         }
     }
 }
