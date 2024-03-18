@@ -37,6 +37,15 @@
 		CFF6289B2BA5FDD8008F16E8 /* PrimaryButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF6289A2BA5FDD8008F16E8 /* PrimaryButtonModifier.swift */; };
 		CFF6289D2BA60228008F16E8 /* AuthenticationFormProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF6289C2BA60228008F16E8 /* AuthenticationFormProtocol.swift */; };
 		CFF6289F2BA674DA008F16E8 /* MockAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF6289E2BA674DA008F16E8 /* MockAuthService.swift */; };
+		CFF628A12BA69313008F16E8 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF628A02BA69313008F16E8 /* AuthManager.swift */; };
+		CFF628A42BA731EA008F16E8 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = CFF628A32BA731EA008F16E8 /* FirebaseAuth */; };
+		CFF628A62BA7321B008F16E8 /* FirebaseAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF628A52BA7321B008F16E8 /* FirebaseAuthService.swift */; };
+		CFF628A82BA735AD008F16E8 /* AuthServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF628A72BA735AD008F16E8 /* AuthServiceProtocol.swift */; };
+		CFF628AA2BA7E404008F16E8 /* UserProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF628A92BA7E404008F16E8 /* UserProfileHeaderView.swift */; };
+		CFF628AC2BA7E415008F16E8 /* ProfileLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF628AB2BA7E415008F16E8 /* ProfileLoginView.swift */; };
+		CFF628AE2BA7E5E1008F16E8 /* CircularProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF628AD2BA7E5E1008F16E8 /* CircularProfileImageView.swift */; };
+		CFF628B32BA7EC23008F16E8 /* WishlistEmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF628B22BA7EC23008F16E8 /* WishlistEmptyStateView.swift */; };
+		CFF628B52BA7ECCA008F16E8 /* WishlistLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF628B42BA7ECCA008F16E8 /* WishlistLoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +80,14 @@
 		CFF6289A2BA5FDD8008F16E8 /* PrimaryButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButtonModifier.swift; sourceTree = "<group>"; };
 		CFF6289C2BA60228008F16E8 /* AuthenticationFormProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationFormProtocol.swift; sourceTree = "<group>"; };
 		CFF6289E2BA674DA008F16E8 /* MockAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAuthService.swift; sourceTree = "<group>"; };
+		CFF628A02BA69313008F16E8 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		CFF628A52BA7321B008F16E8 /* FirebaseAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthService.swift; sourceTree = "<group>"; };
+		CFF628A72BA735AD008F16E8 /* AuthServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServiceProtocol.swift; sourceTree = "<group>"; };
+		CFF628A92BA7E404008F16E8 /* UserProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileHeaderView.swift; sourceTree = "<group>"; };
+		CFF628AB2BA7E415008F16E8 /* ProfileLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileLoginView.swift; sourceTree = "<group>"; };
+		CFF628AD2BA7E5E1008F16E8 /* CircularProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProfileImageView.swift; sourceTree = "<group>"; };
+		CFF628B22BA7EC23008F16E8 /* WishlistEmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistEmptyStateView.swift; sourceTree = "<group>"; };
+		CFF628B42BA7ECCA008F16E8 /* WishlistLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistLoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFF628A42BA731EA008F16E8 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,7 +126,6 @@
 				CFA1BF3B2BA3CCA1003E0E47 /* Extensions */,
 				CFA1BF3F2BA3CCF5003E0E47 /* Models */,
 				CFA1BF402BA3CD05003E0E47 /* Utils */,
-				CFA1BF2F2BA3CC8B003E0E47 /* ContentView.swift */,
 				CFA1BF312BA3CC93003E0E47 /* Assets.xcassets */,
 				CFA1BF332BA3CC93003E0E47 /* Preview Content */,
 			);
@@ -152,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				CFA1BF2D2BA3CC8B003E0E47 /* AirbnbSwiftUIApp.swift */,
+				CFA1BF2F2BA3CC8B003E0E47 /* ContentView.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -193,8 +211,8 @@
 		CFA1BF432BA3CD87003E0E47 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				CFF628B72BA7EEC8008F16E8 /* Components */,
 				CFA1BF572BA419F4003E0E47 /* ProfileView.swift */,
-				CFA1BF592BA41BB9003E0E47 /* ProfileOptionRowView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -224,7 +242,10 @@
 		CFA1BF472BA3CDA5003E0E47 /* Wishlist */ = {
 			isa = PBXGroup;
 			children = (
-				CFA1BF5B2BA41D69003E0E47 /* WishlistView.swift */,
+				CFF628B62BA7EE0C008F16E8 /* Components */,
+				CFF628B12BA7EBF8008F16E8 /* Model */,
+				CFF628B02BA7EBED008F16E8 /* ViewModel */,
+				CFF628AF2BA7EBE7008F16E8 /* Views */,
 			);
 			path = Wishlist;
 			sourceTree = "<group>";
@@ -234,6 +255,7 @@
 			children = (
 				CFA1BF512BA3F2B5003E0E47 /* ListingImageCarouselView.swift */,
 				CFF628832BA5AEAD008F16E8 /* BackButton.swift */,
+				CFF628AD2BA7E5E1008F16E8 /* CircularProfileImageView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -299,6 +321,7 @@
 		CFF628892BA5F851008F16E8 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				CFF628A52BA7321B008F16E8 /* FirebaseAuthService.swift */,
 				CFF6289E2BA674DA008F16E8 /* MockAuthService.swift */,
 			);
 			path = Service;
@@ -326,6 +349,7 @@
 			isa = PBXGroup;
 			children = (
 				CFF6289C2BA60228008F16E8 /* AuthenticationFormProtocol.swift */,
+				CFF628A72BA735AD008F16E8 /* AuthServiceProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -340,6 +364,7 @@
 		CFF6288E2BA5F85C008F16E8 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				CFF628A02BA69313008F16E8 /* AuthManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -351,6 +376,47 @@
 				CFF6289A2BA5FDD8008F16E8 /* PrimaryButtonModifier.swift */,
 			);
 			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		CFF628AF2BA7EBE7008F16E8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CFA1BF5B2BA41D69003E0E47 /* WishlistView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CFF628B02BA7EBED008F16E8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CFF628B12BA7EBF8008F16E8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CFF628B62BA7EE0C008F16E8 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				CFF628B22BA7EC23008F16E8 /* WishlistEmptyStateView.swift */,
+				CFF628B42BA7ECCA008F16E8 /* WishlistLoginView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		CFF628B72BA7EEC8008F16E8 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				CFA1BF592BA41BB9003E0E47 /* ProfileOptionRowView.swift */,
+				CFF628A92BA7E404008F16E8 /* UserProfileHeaderView.swift */,
+				CFF628AB2BA7E415008F16E8 /* ProfileLoginView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -369,6 +435,9 @@
 			dependencies = (
 			);
 			name = AirbnbSwiftUI;
+			packageProductDependencies = (
+				CFF628A32BA731EA008F16E8 /* FirebaseAuth */,
+			);
 			productName = AirbnbSwiftUI;
 			productReference = CFA1BF2A2BA3CC8B003E0E47 /* AirbnbSwiftUI.app */;
 			productType = "com.apple.product-type.application";
@@ -397,6 +466,9 @@
 				Base,
 			);
 			mainGroup = CFA1BF212BA3CC8A003E0E47;
+			packageReferences = (
+				CFF628A22BA731EA008F16E8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = CFA1BF2B2BA3CC8B003E0E47 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -425,13 +497,21 @@
 			files = (
 				CFA1BF522BA3F2B5003E0E47 /* ListingImageCarouselView.swift in Sources */,
 				CFF628922BA5F8C2008F16E8 /* RegistrationView.swift in Sources */,
+				CFF628A12BA69313008F16E8 /* AuthManager.swift in Sources */,
 				CFF628992BA5FC86008F16E8 /* PrimaryTextFieldModifier.swift in Sources */,
 				CFA1BF582BA419F4003E0E47 /* ProfileView.swift in Sources */,
 				CFA1BF6F2BA448BE003E0E47 /* ExploreService.swift in Sources */,
 				CFF628842BA5AEAD008F16E8 /* BackButton.swift in Sources */,
 				CFA1BF5A2BA41BB9003E0E47 /* ProfileOptionRowView.swift in Sources */,
+				CFF628A82BA735AD008F16E8 /* AuthServiceProtocol.swift in Sources */,
 				CFA1BF542BA4035D003E0E47 /* DestinationSearchView.swift in Sources */,
+				CFF628AC2BA7E415008F16E8 /* ProfileLoginView.swift in Sources */,
+				CFF628AA2BA7E404008F16E8 /* UserProfileHeaderView.swift in Sources */,
 				CFA1BF682BA44117003E0E47 /* DeveloperPreview.swift in Sources */,
+				CFF628B52BA7ECCA008F16E8 /* WishlistLoginView.swift in Sources */,
+				CFF628AE2BA7E5E1008F16E8 /* CircularProfileImageView.swift in Sources */,
+				CFF628B32BA7EC23008F16E8 /* WishlistEmptyStateView.swift in Sources */,
+				CFF628A62BA7321B008F16E8 /* FirebaseAuthService.swift in Sources */,
 				CFF6289D2BA60228008F16E8 /* AuthenticationFormProtocol.swift in Sources */,
 				CFF628902BA5F8AF008F16E8 /* LoginView.swift in Sources */,
 				CFA1BF302BA3CC8B003E0E47 /* ContentView.swift in Sources */,
@@ -656,6 +736,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CFF628A22BA731EA008F16E8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.22.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CFF628A32BA731EA008F16E8 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CFF628A22BA731EA008F16E8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CFA1BF222BA3CC8B003E0E47 /* Project object */;
 }

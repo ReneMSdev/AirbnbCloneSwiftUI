@@ -40,7 +40,10 @@ struct ListingMapPreviewView: View {
                 
                 Spacer()
                 
-                Text("\(listing.rating)")
+                HStack(spacing: 2) {
+                    Image(systemName: "star.fill")
+                    Text(String(format: "%.2f", listing.rating))
+                }
             }
             .font(.footnote)
             .padding(8)
